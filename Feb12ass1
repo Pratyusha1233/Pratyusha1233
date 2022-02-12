@@ -1,11 +1,34 @@
-Number1 = int(input('enter the first number')) 
+rice=250
+drink=90
+soap=290
+oil=300
+dal=50
 
-Number2 = int(input('enter the second number'))
+cname=input("enter customer name:")
+cphno=input("enter customer phno:")
+RiceQ=int(input('enter number of rice bags'))
+DrinkQ=int(input('enter no of drinks bottles:'))
+SoapQ=int(input ('enter no of soaps'))
+OilQ=int(input('enter no of oil packets:'))
+DalQ=int(input('enter no of dal bags'))
 
-if Number1 > Number2:
-    print('Number1 bigger than Number2')
-elif Number1 < Number2:
-    print('Number1 smaller than Number2')
+bill=(rice*RiceQ)+(drink*DrinkQ)+(soap*SoapQ)+(oil*OilQ)+(dal*DalQ)
+
+if bill>=5000:
+          Dis=bill*10/100
+          Tax=bill*10/100
+elif bill>=3000:
+          Dis=bill*8/100
+          Tax=bill*10/100
+elif bill>=2000:
+          Dis=bill*5/100
+          Tax=bill*18/100
+elif bill>=1000:
+          Dis=bill*3/100
+          Tax=bill*18/100
 else:
-    print('Number1 equal to Number2')
+        print("your bill is less than 1000 no discount")
+
+Mainbill=bill+Tax-Dis
+print("your bill amount is:",Mainbill
 
