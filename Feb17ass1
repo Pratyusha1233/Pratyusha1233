@@ -1,0 +1,10 @@
+a=int(input('Enter value'))
+b= int(input('Enter Value'))
+even_total=0
+odd_total=0
+for i in range(a,b+1):
+	if (i%2==0):
+		even_total=even_total+i
+		odd_total=odd_total+i
+print("Sum of Even Numbers from 1 to {0} = {1}".format(i, even_total))
+print("Sum of Odd Numbers from 1 to {0} = {1}".format(i, odd_total))
