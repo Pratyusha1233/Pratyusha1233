@@ -1,0 +1,14 @@
+L = []
+P = []
+N = []
+n = int(input(" enter the Number of List Elements : "))
+for i in range(1, n + 1):
+    value = int(input(" enter the  Element : " ))
+    L.append(value)
+for j in range(n):
+    if(L[j] >= 0):
+        P.append(L[j])
+    else:
+        N.append(L[j])
+print(" List is : ", P)
+print(" List is : ", N)
